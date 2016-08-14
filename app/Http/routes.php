@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/business', function () {
+    return view('business');
+});
+
+Route::get('/news', function () {
+    return 'Ещё не готова, скоро всё будет!';
+});

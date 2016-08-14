@@ -17,6 +17,7 @@
     <title>@yield('title')</title>
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
@@ -37,18 +38,47 @@
 
 
 <div class="wrapper">
-    @yield('content')
-</div>
 
-<footer>
-    <div class="navbar navbar-inverse">
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li><a target="about:blank" rel="nofollow" href="https://bapps.kz">Разработано в студии B-Apps</a></li>
-            </ul>
+    <nav class="navbar navbar-main navbar-fixed-top">
+        <ul class="nav navbar-nav pull-right">
+            <li {!! (strpos(Request::url(),"/products") !== false ? 'class="active"' : '') !!}><a href="#">Продукты</a></li>
+            <li {!! (strpos(Request::url(),"/business") !== false ? 'class="active"' : '') !!}><a href="{!! url('/business') !!}">Для бизнеса</a></li>
+            <li {!! (strpos(Request::url(),"/news") !== false ? 'class="active"' : '') !!}><a href="{!! url('/news') !!}">Новости</a></li>
+            <li {!! (strpos(Request::url(),"#business") !== false ? 'class="active"' : '') !!}><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    @yield('content')
+
+    <footer id="contacts">
+        <div  class="content">
+            <table>
+                <tr>
+                    <td width="40px"><i class="fa fa-map-marker"></i></td><td>Адрес: Республика Казахстан, г.Алматы</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-phone"></i></td><td>Телефон: +7 775 969 3 999 / +7 777 469 3 999</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-at"></i></td><td>email: mobile_energy@ramlbler.ru</td>
+                </tr>
+            </table>
+
+            <div class="social">
+                <a href="https://new.vk.com/mobileenergy"><i class="fa fa-square-o fa-vk"></i></a>
+                <a href="https://www.facebook.com/Mobilenergy"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://twitter.com/Mobile__Energy"><i class="fa fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/mobile.energy/"><i class="fa fa-instagram"></i></a>
+            </div>
         </div>
-    </div>
-</footer>
+
+
+        <div class="year">
+            2016
+        </div>
+    </footer>
+
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
