@@ -5749,10 +5749,12 @@ header#main {
   @media (max-width: 991px) {
     header#main > h2 {
       bottom: -90px; }
+    header#main::before {
+      background-size: 100%; }
     header#main > img.slogan {
-      top: 180px;
-      left: 10px;
-      width: 80%; } }
+      top: 100px;
+      left: 40px;
+      width: 300px; } }
 
 .guys {
   position: relative;
@@ -5903,25 +5905,38 @@ header#main {
         float: left; }
 
 header#business::before {
-  background: url("../img/header2.jpg") left top no-repeat; }
+  background: url("../img/header2.jpg") left top no-repeat;
+  /* Small devices (tablets, 768px and up) */ }
+  @media (max-width: 991px) {
+    header#business::before {
+      background-size: 100%; } }
 
 .guy {
   border-bottom: 60px solid #009746;
-  background: url("../img/guy.png") left top no-repeat;
+  background: url("../img/guy.png") left bottom no-repeat;
   background-size: 50%;
   padding-left: 50%;
   padding-top: 70px;
   padding-bottom: 70px;
-  font-size: 1.2vw; }
+  font-size: 16pt;
+  /* Small devices (tablets, 768px and up) */ }
   .guy > .content {
     padding-right: 5%; }
     .guy > .content > h3 {
-      font-size: 3vw;
+      font-size: 32pt;
       text-transform: uppercase;
       border-bottom: 4px solid #009746; }
+  @media (max-width: 991px) {
+    .guy {
+      background: none;
+      padding-left: 10px; } }
 
 header#products::before {
-  background: url("../img/header1.jpg") left top no-repeat; }
+  background: url("../img/header1.jpg") left top no-repeat;
+  /* Small devices (tablets, 768px and up) */ }
+  @media (max-width: 991px) {
+    header#products::before {
+      background-size: 100%; } }
 
 header#products > img {
   position: absolute;
@@ -5959,13 +5974,21 @@ header#products > img {
       font-size: 14pt; } }
 
 header#news::before {
-  background: url("../img/header4.jpg") left top no-repeat; }
+  background: url("../img/header4.jpg") left top no-repeat;
+  /* Small devices (tablets, 768px and up) */ }
+  @media (max-width: 991px) {
+    header#news::before {
+      background-size: 100%; } }
 
 .news {
   background: linear-gradient(to top, #e3e3e3, #ffffff); }
 
 header#map::before {
-  background: url("../img/header3.jpg") left top no-repeat; }
+  background: url("../img/header3.jpg") left top no-repeat;
+  /* Small devices (tablets, 768px and up) */ }
+  @media (max-width: 991px) {
+    header#map::before {
+      background-size: 100%; } }
 
 .map {
   width: 100%;
@@ -6066,10 +6089,13 @@ header {
     font-weight: 300; }
   @media (max-width: 991px) {
     header {
-      height: 350px;
+      height: 250px;
       border-bottom-width: 100px; }
+      header::before {
+        background-size: 100%; }
       header > h2 {
-        bottom: -90px; } }
+        bottom: -90px;
+        font-size: 16pt; } }
 
 /**
   НАВИГАЦИЯ

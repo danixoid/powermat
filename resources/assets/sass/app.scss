@@ -136,11 +136,16 @@ header {
 
   /* Small devices (tablets, 768px and up) */
   @media (max-width: $screen-sm-max) {
-    height: 350px;
+    height: 250px;
     border-bottom-width: 100px;
+
+    &::before {
+      background-size: 100%;
+    }
 
     > h2 {
       bottom: -90px;
+      font-size: 16pt;
     }
   }
 }

@@ -29,10 +29,14 @@ header {
         bottom: -90px;
       }
 
+      &::before {
+        background-size: 100%;
+      }
+
       > img.slogan {
-        top: 180px;
-        left: 10px;
-        width: 80%;
+        top: 100px;
+        left: 40px;
+        width: 300px;
       }
     }
   }

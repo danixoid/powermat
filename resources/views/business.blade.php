@@ -57,15 +57,15 @@
 
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-4 text-center">
+                        <div class="col-xs-4 text-center">
                             <img width="90%" src="{!! url('/img/box_x4.png') !!}" />
                             <div style="margin-top: 10px;"><strong>60 000</strong> тенге</div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-xs-4 text-center">
                             <img width="90%" src="{!! url('/img/box_x10.png') !!}" />
                             <div style="margin-top: 10px;"><strong>150 000</strong> тенге</div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-xs-4 text-center">
                             <img width="90%" src="{!! url('/img/box_x20.png') !!}" />
                             <div style="margin-top: 10px;"><strong>300 000</strong> тенге</div>
                         </div>

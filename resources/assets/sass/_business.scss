@@ -1,27 +1,39 @@
 
 header {
   &#business {
-    &::before { background: url("../img/header2.jpg") left top no-repeat;}
+    &::before {
+      background: url("../img/header2.jpg") left top no-repeat;
+
+      /* Small devices (tablets, 768px and up) */
+      @media (max-width: $screen-sm-max) {
+        background-size: 100%;
+      }
+    }
   }
 }
 
 .guy {
   border-bottom: 60px solid #009746;
-  background: url('../img/guy.png') left top no-repeat;
+  background: url('../img/guy.png') left bottom no-repeat;
   background-size: 50%;
   padding-left: 50%;
   padding-top: 70px;
   padding-bottom: 70px;
-  font-size: 1.2vw;
+  font-size: 16pt;
 
   > .content {
     padding-right: 5%;
 
     > h3 {
-      font-size: 3vw;
+      font-size: 32pt;
       text-transform: uppercase;
       border-bottom: 4px solid #009746;
     }
   }
 
+  /* Small devices (tablets, 768px and up) */
+  @media (max-width: $screen-sm-max) {
+    background: none;
+    padding-left: 10px;
+  }
 }
