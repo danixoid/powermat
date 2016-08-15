@@ -1,0 +1,27 @@
+
+header {
+  &#business {
+    &::before { background: url("../img/header2.jpg") left top no-repeat;}
+  }
+}
+
+.guy {
+  border-bottom: 60px solid #009746;
+  background: url('../img/guy.png') left top no-repeat;
+  background-size: 50%;
+  padding-left: 50%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  font-size: 1.2vw;
+
+  > .content {
+    padding-right: 5%;
+
+    > h3 {
+      font-size: 3vw;
+      text-transform: uppercase;
+      border-bottom: 4px solid #009746;
+    }
+  }
+
+}

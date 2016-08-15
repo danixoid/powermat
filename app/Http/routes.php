@@ -15,10 +15,24 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/products', function () {
+    return view('products');
+});
+
 Route::get('/business', function () {
     return view('business');
 });
 
-Route::get('/news', function () {
-    return 'Ещё не готова, скоро всё будет!';
+Route::get('/map', function () {
+    return view('map');
 });
+
+
+Route::resource('news','PageController');
+
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+//    'password' => 'Auth\PasswordController',
+//    'admin' => 'AdminController',
+]);

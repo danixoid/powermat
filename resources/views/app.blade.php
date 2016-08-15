@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="_token" content="{{ csrf_token() }}">
 
-    <title>@yield('title')</title>
+    <title>&laquo;Mobile Energy&raquo; - @yield('title')</title>
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
@@ -22,7 +22,7 @@
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- WARNING: Respond.js doesn't work if you view the pages via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -40,14 +40,28 @@
 <div class="wrapper">
 
     <nav class="navbar navbar-main navbar-fixed-top">
-        <ul class="nav navbar-nav pull-right">
-            <li {!! (strpos(Request::url(),"/products") !== false ? 'class="active"' : '') !!}><a href="#">Продукты</a></li>
-            <li {!! (strpos(Request::url(),"/business") !== false ? 'class="active"' : '') !!}><a href="{!! url('/business') !!}">Для бизнеса</a></li>
-            <li {!! (strpos(Request::url(),"/news") !== false ? 'class="active"' : '') !!}><a href="{!! url('/news') !!}">Новости</a></li>
-            <li {!! (strpos(Request::url(),"#business") !== false ? 'class="active"' : '') !!}><a href="#contacts">Контакты</a></li>
-        </ul>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li {!! (strpos(Request::url(),"/products") !== false ? 'class="active"' : '') !!}><a href="{!! url('/products') !!}">Продукты</a></li>
+                <li {!! (strpos(Request::url(),"/business") !== false ? 'class="active"' : '') !!}><a href="{!! url('/business') !!}">Для бизнеса</a></li>
+                <li {!! (strpos(Request::url(),"/news") !== false ? 'class="active"' : '') !!}><a href="{!! url('/news') !!}">Новости</a></li>
+                <li {!! (strpos(Request::url(),"#business") !== false ? 'class="active"' : '') !!}><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
     </nav>
 
+    <a href="{!! url('/') !!}">
+        <img class="logo" src="{!! url('/img/logo_home.png') !!}" />
+    </a>
     @yield('content')
 
     <footer id="contacts">
@@ -65,10 +79,10 @@
             </table>
 
             <div class="social">
-                <a href="https://new.vk.com/mobileenergy"><i class="fa fa-square-o fa-vk"></i></a>
-                <a href="https://www.facebook.com/Mobilenergy"><i class="fa fa-facebook-square"></i></a>
-                <a href="https://twitter.com/Mobile__Energy"><i class="fa fa-twitter-square"></i></a>
-                <a href="https://www.instagram.com/mobile.energy/"><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://new.vk.com/mobileenergy"><i class="fa fa-square-o fa-vk"></i></a>
+                <a target="_blank" href="https://www.facebook.com/Mobilenergy"><i class="fa fa-facebook-square"></i></a>
+                <a target="_blank" href="https://twitter.com/Mobile__Energy"><i class="fa fa-twitter-square"></i></a>
+                <a target="_blank" href="https://www.instagram.com/mobile.energy/"><i class="fa fa-instagram"></i></a>
             </div>
         </div>
 
@@ -84,4 +98,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
 @yield('javascript')
+
 </body>

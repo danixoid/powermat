@@ -1,0 +1,13 @@
+
+header {
+  &#map {
+    &::before {
+      background: url("../img/header3.jpg") left top no-repeat;
+    }
+  }
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+}
