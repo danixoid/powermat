@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Page;
+use App\Location;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class PageController extends Controller
+class LocationController extends Controller
 {
     /**
      * PageController constructor.
@@ -25,8 +25,11 @@ class PageController extends Controller
      */
     public function index()
     {
-        $pages = Page::paginate(5);
-        return view('pages.index',['pages' => $pages]);
+        if(!request()->ajax()) {
+            return view('map');
+        }
+
+        return response()->json(Location::all());
     }
 
     /**

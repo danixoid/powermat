@@ -21,6 +21,7 @@ class CreateLocationsTable extends Migration
             $table->string('address');
             $table->string('phone');
             $table->string('logo');
+            $table->string('img');
             $table->string('about');
             $table->timestamps();
         });

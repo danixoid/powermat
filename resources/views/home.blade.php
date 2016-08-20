@@ -17,7 +17,7 @@
 @section('content')
     <header id="main">
         <img src="{!! url('/img/slogan.png') !!}" class="slogan"/>
-        <img src="{!! url('/img/marker.png') !!}" class="marker"/>
+        <a href="{!! url('/location') !!}"><img class="marker" src="{!! url('/img/marker.png') !!}"/></a>
         <h2>Беспроводные зарядные системы стандарта Qi</h2>
     </header>
 

@@ -23,12 +23,9 @@ Route::get('/business', function () {
     return view('business');
 });
 
-Route::get('/map', function () {
-    return view('map');
-});
-
 
 Route::resource('news','PageController');
+Route::resource('location','LocationController');
 
 
 Route::controllers([

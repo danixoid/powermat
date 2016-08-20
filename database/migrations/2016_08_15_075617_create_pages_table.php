@@ -15,6 +15,7 @@ class CreatePagesTable extends Migration
         Schema::create('pages', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('owner_id');
+            $table->boolean('visible');
             $table->string('title');
             $table->string('subtitle');
             $table->text('body');

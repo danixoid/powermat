@@ -54,11 +54,12 @@
                 <li {!! (strpos(Request::url(),"/products") !== false ? 'class="active"' : '') !!}><a href="{!! url('/products') !!}">Продукты</a></li>
                 <li {!! (strpos(Request::url(),"/business") !== false ? 'class="active"' : '') !!}><a href="{!! url('/business') !!}">Для бизнеса</a></li>
                 <li {!! (strpos(Request::url(),"/news") !== false ? 'class="active"' : '') !!}><a href="{!! url('/news') !!}">Новости</a></li>
-                <li {!! (strpos(Request::url(),"#contacts") !== false ? 'class="active"' : '') !!}><a href="/map">Контакты</a></li>
+                <li {!! (strpos(Request::url(),"#contacts") !== false ? 'class="active"' : '') !!}><a href="#contacts">Контакты</a></li>
             </ul>
         </div>
     </nav>
 
+    <img class="corner" src="{!! url('/img/corner.png') !!}" />
     <a href="{!! url('/') !!}">
         <img class="logo" src="{!! url('/img/logo_home.png') !!}" />
     </a>

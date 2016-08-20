@@ -24,10 +24,16 @@
         @foreach($pages as $page)
             <div class="news">
                 <div class="content">
-
+                    <h3>{!! $page->title !!}</h3>
+                    <p>{!! $page->subtitle !!}</p>
+                    <div class="well">{!! $page->body !!}</div>
                 </div>
+                @if(\Auth::check())
+                    <a href="{!! route('page.edit',$page->id) !!}">Редактировать</a>
+                @endif
             </div>
         @endforeach
+        <div class="text-center">{!! $pages->render() !!}</div>
     @else
         <div class="alert alert-danger">Новостей не найдено!</div>
     @endif
