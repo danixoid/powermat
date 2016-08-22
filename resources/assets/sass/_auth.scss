@@ -1,0 +1,29 @@
+
+header {
+  &#auth {
+    &::before {
+      background: url("../img/header3.jpg") left top no-repeat;
+
+      /* Small devices (tablets, 768px and up) */
+      @media (max-width: $screen-sm-max) {
+        background-size: 100%;
+      }
+    }
+
+    > .content {
+      position: absolute;
+      z-index: 200;
+      top: 200px;
+      width: 100%;
+      padding: 100px auto;
+
+      /* Small devices (tablets, 768px and up) */
+      @media (max-width: $screen-sm-max) {
+        position: relative;
+        width: 60%;
+        top: 40px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

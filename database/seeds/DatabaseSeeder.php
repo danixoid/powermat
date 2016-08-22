@@ -32,7 +32,7 @@ class AllTablesSeeder extends Seeder
     {
         $user = User::create([
             'name' => 'Администратор',
-            'email' => "danixoid@bapps.kz",
+            'email' => "admin@bapps.kz",
             'password' => bcrypt('123456')
         ]);
 

@@ -9,6 +9,14 @@ header {
         background-size: 100%;
       }
     }
+
+    .create {
+      position: absolute;
+      z-index: 150;
+      top: 150px;
+      right: 20px;
+
+    }
   }
 }
 

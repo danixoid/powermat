@@ -11,13 +11,6 @@ header {
       z-index: 140;
     }
 
-    > a > img.marker {
-      position: absolute;
-      right: 30px;
-      bottom: 30px;
-      z-index: 120;
-    }
-
     &::before {
       background: url("../img/header.jpg") left top no-repeat;
     }

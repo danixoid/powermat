@@ -15,7 +15,7 @@
 
 @section('content')
     <header id="map">
-        <h2>Карта <strong>&laquo;Mobile Energy&raquo;</strong></h2>
+        <h2><strong>Карта</strong> установленных зарядных устройств</h2>
     </header>
     <div id="ymap" class="map">
         <div class="balloon hide">

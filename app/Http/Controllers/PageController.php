@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PageRequest;
 use App\Page;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Auth;
 
 class PageController extends Controller
 {
@@ -25,7 +27,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        $pages = Page::paginate(5);
+        $pages = Page::whereVisible(1)->orderBy('updated_at','desc')->paginate(5);
         return view('pages.index',['pages' => $pages]);
     }
 
@@ -36,18 +38,25 @@ class PageController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param PageRequest|Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PageRequest $request)
     {
-        //
+        $data = $request->input();
+        $data['owner_id'] = Auth::user()->id;
+
+        if(!Page::create($data)) {
+            return redirect()->back()->with('warning','Не сохранено')->withInput();
+        }
+
+        return redirect()->route('news.index')->with('message','Сохранено');
     }
 
     /**
@@ -58,7 +67,7 @@ class PageController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('pages.show',['page' => Page::find($id)]);
     }
 
     /**
@@ -69,19 +78,25 @@ class PageController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('pages.edit',['news' => Page::find($id)]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param PageRequest|Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PageRequest $request, $id)
     {
-        //
+        $data = $request->input();
+
+        if(!Page::updateOrCreate(['id' => $id],$data)) {
+            return redirect()->back()->with('warning','Не сохранено')->withInput();
+        }
+
+        return redirect()->route('news.show',$id)->with('message','Сохранено');
     }
 
     /**

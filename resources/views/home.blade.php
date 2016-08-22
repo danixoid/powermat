@@ -17,7 +17,6 @@
 @section('content')
     <header id="main">
         <img src="{!! url('/img/slogan.png') !!}" class="slogan"/>
-        <a href="{!! url('/location') !!}"><img class="marker" src="{!! url('/img/marker.png') !!}"/></a>
         <h2>Беспроводные зарядные системы стандарта Qi</h2>
     </header>
 
@@ -58,5 +57,4 @@
 @endsection
 
 @section('javascript')
-
 @endsection

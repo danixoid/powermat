@@ -18,6 +18,11 @@
 
     <header id="news">
         <h2><strong>&laquo;Mobile Energy&raquo;</strong> - что нового...</h2>
+
+        @if(\Auth::check())
+            <a class="create btn btn-primary" href="{!! route('news.create') !!}">Новая запись</a>
+        @endif
+
     </header>
 
     @if(count($pages) > 0)
@@ -27,10 +32,10 @@
                     <h3>{!! $page->title !!}</h3>
                     <p>{!! $page->subtitle !!}</p>
                     <div class="well">{!! $page->body !!}</div>
+                    @if(\Auth::check())
+                        <a href="{!! route('news.edit',$page->id) !!}">Редактировать</a>
+                    @endif
                 </div>
-                @if(\Auth::check())
-                    <a href="{!! route('page.edit',$page->id) !!}">Редактировать</a>
-                @endif
             </div>
         @endforeach
         <div class="text-center">{!! $pages->render() !!}</div>

@@ -51,13 +51,22 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li {!! (strpos(Request::url(),"/products") !== false ? 'class="active"' : '') !!}><a href="{!! url('/products') !!}">Продукты</a></li>
-                <li {!! (strpos(Request::url(),"/business") !== false ? 'class="active"' : '') !!}><a href="{!! url('/business') !!}">Для бизнеса</a></li>
-                <li {!! (strpos(Request::url(),"/news") !== false ? 'class="active"' : '') !!}><a href="{!! url('/news') !!}">Новости</a></li>
-                <li {!! (strpos(Request::url(),"#contacts") !== false ? 'class="active"' : '') !!}><a href="#contacts">Контакты</a></li>
+                <li {!! (strpos(request()->url(),"/products") !== false ? 'class="active"' : '') !!}><a href="{!! url('/products') !!}">Продукты</a></li>
+                <li {!! (strpos(request()->url(),"/business") !== false ? 'class="active"' : '') !!}><a href="{!! url('/business') !!}">Для бизнеса</a></li>
+                <li {!! (strpos(request()->url(),"/news") !== false ? 'class="active"' : '') !!}><a href="{!! url('/news') !!}">Новости</a></li>
+                <li {!! (strpos(request()->url(),"#contacts") !== false ? 'class="active"' : '') !!}><a href="#contacts">Контакты</a></li>
+                @if(\Auth::check())
+                    <li><a href="{!! url('/auth/logout') !!}">Выход</a></li>
+                @endif
             </ul>
         </div>
     </nav>
+
+    @if(strpos(request()->url(),"/location") === false)
+        <a href="{!! url('/location') !!}"><img class="marker" src="{!! url('/img/marker.png') !!}"/></a>
+    @else
+        <a href="{!! url('/location') !!}"><img class="marker-slide" src="{!! url('/img/marker.png') !!}"/></a>
+    @endif
 
     <img class="corner" src="{!! url('/img/corner.png') !!}" />
     <a href="{!! url('/') !!}">
@@ -98,6 +107,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
+<script type="text/javascript">
+
+    // = Вешаем событие прокрутки к нужному месту
+    //	 на все ссылки якорь которых начинается на #
+    $('nav li a[href^="#"]').bind('click.smoothscroll',function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+                $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+</script>
 @yield('javascript')
 
 </body>
