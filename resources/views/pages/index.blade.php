@@ -38,7 +38,7 @@
                 </div>
             </div>
         @endforeach
-        <div class="text-center">{!! $pages->render() !!}</div>
+        <div class="paginate text-center">{!! $pages->render() !!}</div>
     @else
         <div class="alert alert-danger">Новостей не найдено!</div>
     @endif
