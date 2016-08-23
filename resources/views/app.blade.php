@@ -56,6 +56,7 @@
                 <li {!! (strpos(request()->url(),"/news") !== false ? 'class="active"' : '') !!}><a href="{!! url('/news') !!}">Новости</a></li>
                 <li {!! (strpos(request()->url(),"#contacts") !== false ? 'class="active"' : '') !!}><a href="#contacts">Контакты</a></li>
                 @if(\Auth::check())
+                    <li {!! (strpos(request()->url(),"/options") !== false ? 'class="active"' : '') !!}><a href="{!! url('/options') !!}">Настройки</a></li>
                     <li><a href="{!! url('/auth/logout') !!}">Выход</a></li>
                 @endif
             </ul>
@@ -78,21 +79,21 @@
         <div  class="content">
             <table>
                 <tr>
-                    <td width="40px"><i class="fa fa-map-marker"></i></td><td>Адрес: Республика Казахстан, г.Алматы</td>
+                    <td width="40px"><i class="fa fa-map-marker"></i></td><td>{!! option('address') !!}</td>
                 </tr>
                 <tr>
-                    <td><i class="fa fa-phone"></i></td><td>Телефон: +7 775 969 3 999 / +7 777 469 3 999</td>
+                    <td><i class="fa fa-phone"></i></td><td>{!! option('phone') !!}</td>
                 </tr>
                 <tr>
-                    <td><i class="fa fa-at"></i></td><td>email: mobile_energy@ramlbler.ru</td>
+                    <td><i class="fa fa-at"></i></td><td>{!! option('email') !!}</td>
                 </tr>
             </table>
 
             <div class="social">
-                <a target="_blank" href="https://new.vk.com/mobileenergy"><i class="fa fa-square-o fa-vk"></i></a>
-                <a target="_blank" href="https://www.facebook.com/Mobilenergy"><i class="fa fa-facebook-square"></i></a>
-                <a target="_blank" href="https://twitter.com/Mobile__Energy"><i class="fa fa-twitter-square"></i></a>
-                <a target="_blank" href="https://www.instagram.com/mobile.energy/"><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="{!! option('vk') !!}"><i class="fa fa-square-o fa-vk"></i></a>
+                <a target="_blank" href="{!! option('facebook') !!}"><i class="fa fa-facebook-square"></i></a>
+                <a target="_blank" href="{!! option('twitter') !!}"><i class="fa fa-twitter-square"></i></a>
+                <a target="_blank" href="{!! option('instagram') !!}"><i class="fa fa-instagram"></i></a>
             </div>
         </div>
 

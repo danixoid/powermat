@@ -17,28 +17,26 @@
 @section('content')
     <header id="main">
         <img src="{!! url('/img/slogan.png') !!}" class="slogan"/>
-        <h2>Беспроводные зарядные системы стандарта Qi</h2>
+        <h2>{!! option('home_title') !!}</h2>
     </header>
 
     <div class="guys">
         <div class="content">
-            <div class="offer">Предоставляем вам возможность стать частью динамичного интересного проекта</div>
-            <h3><span>Будущее</span><br />уже наступило!</h3>
+            <div class="offer">{!! option('home_offer1') !!}</div>
+            <h3>{!! option('home_offer2') !!}</h3>
         </div>
     </div>
 
     <div class="invite">
-        <a href="#" class="btn btn-block">Становитесь нашим партнером</a>
+        <a href="#" class="btn btn-block">{!! option('home_invite') !!}</a>
     </div>
 
     <div class="about">
         <div class="content">
-            <h3>Mobile energy - будущее зарядных устройств</h3>
-            <p>Заряжайте без проводов, больше не нужны неудобные кабеля.</p>
-            <p>Просто положи свой телефон на зарядный круг для зарядки.</p>
+            {!! option('home_about') !!}
 
             <div class="watch">
-                <p>Смотри на видео<br />как это работает</p>
+                <p>{!! option('home_watch') !!}</p>
                 <button class="btn btn-watch"><i class="fa fa-play"></i></button>
             </div>
         </div>
@@ -46,7 +44,7 @@
 
     <div class="mobile">
         <div class="content">
-            <h3>Чтобы начать, скачайте приложение <br /> для вашего смартфона</h3>
+            <h3>{!! option('home_mobile') !!}</h3>
             <div class="download">
                 <a href="#"><img src="{!! url('/img/appstore.png') !!}" /></a>
                 <a href="#"><img src="{!! url('/img/googleplay.png') !!}" /></a>

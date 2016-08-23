@@ -16,12 +16,26 @@ header {
 
       &.mob {
         bottom: 50px;
-        left: 400px;
+        left: 380px;
       }
 
       &.charger {
         bottom: 50px;
         left: 200px;
+      }
+      /* Small devices (tablets, 768px and up) */
+      @media (max-width: $screen-sm-max) {
+        &.mob {
+          width: 100px;
+          bottom: 10px;
+          left: 140px;
+        }
+
+        &.charger {
+          width: 50px;
+          bottom: 10px;
+          left: 80px;
+        }
       }
     }
   }

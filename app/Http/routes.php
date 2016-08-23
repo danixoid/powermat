@@ -26,6 +26,7 @@ Route::get('/business', function () {
 
 Route::resource('news','PageController');
 Route::resource('location','LocationController');
+Route::resource('options','OptionController');
 
 
 Route::controllers([
