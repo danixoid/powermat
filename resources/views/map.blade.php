@@ -25,6 +25,7 @@
             <p id="about">about</p>
             <p id="address">about</p>
             <p id="spots">Количество зарядных устройств: <strong></strong></p>
+            <p id="distance">Дистанция: <strong></strong></p>
         </div>
     </div>
 
@@ -44,11 +45,20 @@
                         searchControlProvider: 'yandex#search'
                     });
 
+            myMap.geoObjects.add(new ymaps.Placemark([43.228999, 76.906483], {
+                hintContent: 'Моё местоположение'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: '{!! url('/img/marker.png') !!}',
+                iconImageSize: [32, 42],
+                iconImageOffset: [-3, -42],
+            }));
+
             $.ajax({
                 'url' : '{!! route('location.index') !!}',
                 'method' : 'get',
                 'dataType' : 'JSON',
-                'data' : [],
+                'data' : {'lat' : 43.228999, 'lng' : 76.906483},
                 'success' : function(points) {
                     points.forEach(function(point,i,arr) {
 
@@ -69,6 +79,7 @@
                             $(".balloon > p#about").html(point.about);
                             $(".balloon > p#address").html(point.address);
                             $(".balloon > p#spots > strong").text(point.spots);
+                            $(".balloon > p#distance > strong").text(point.distance);
                             $(".balloon").removeClass("hide");
                         });
 

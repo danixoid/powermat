@@ -51,7 +51,6 @@
                     {!! csrf_field() !!}
                     {!! method_field('PUT') !!}
 
-                    <input type="hidden" class="form-control" name="visible" value="0" />
 
                     <div class="form-group">
                         <label class="col-md-3 control-label">Ключ</label>

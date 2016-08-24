@@ -29,7 +29,11 @@ class LocationController extends Controller
             return view('map');
         }
 
-        return response()->json(Location::all());
+        if(!request()->has('lat') || !request()->has('lng')) {
+            return response()->json([]);
+        }
+
+        return Location::searchWithLatLng(request('lat'),request('lng'))->get();
     }
 
     /**

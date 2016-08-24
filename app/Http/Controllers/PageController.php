@@ -92,7 +92,7 @@ class PageController extends Controller
     {
         $data = $request->input();
 
-        if(!Page::updateOrCreate(['id' => $id],$data)) {
+        if(!Page::find($id)->update($data)) {
             return redirect()->back()->with('warning','Не сохранено')->withInput();
         }
 

@@ -88,11 +88,14 @@ class OptionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = $request->all();
+        $data = $request->input();
 
-        if(!Option::updateOrCreate(['id' => $id],$data)) {
+        if(!Option::find($id)->update($data)) {
             return redirect()->back()->withInput()->with('warning','Ошибка сохранения');
         }
+
+
+
 
         return redirect()->route('options.index')->with('message','Сохранено');
     }

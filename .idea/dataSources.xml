@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1860389941">
+  <component name="DataSourceManagerImpl" format="xml" hash="2061997495">
     <data-source source="LOCAL" name="MySQL - powermat@localhost" uuid="1a06d058-9248-4273-8774-46d21f37c4a2">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
