@@ -42,6 +42,12 @@
     top: 390px;
     z-index: 120;
 
+
+    /* Small devices (tablets, 768px and up) */
+    @media (max-width: $screen-sm-max) {
+      top: 150px;
+    }
+
     animation: animationFrames linear 2s;
     animation-iteration-count: infinite;
     transform-origin: 50% 50%;
@@ -133,6 +139,14 @@ header {
   background-color: #feed00;
   border-bottom: 60px solid #009746;
 
+  .create {
+    position: absolute;
+    z-index: 150;
+    top: 150px;
+    right: 20px;
+
+  }
+
   &::before {
     position: absolute;
     z-index: 100;
@@ -150,7 +164,7 @@ header {
     z-index: 130;
     left: 0;
     right: 0;
-    bottom: -58px;
+    bottom: -48px;
     text-align: center;
     color: #aee5c5;
     color: rgba(255,255,255,.8);

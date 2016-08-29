@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\LocationRequest;
 use App\Location;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Storage;
 
 class LocationController extends Controller
 {
@@ -26,7 +28,7 @@ class LocationController extends Controller
     public function index()
     {
         if(!request()->ajax()) {
-            return view('map');
+            return view('locations.index');
         }
 
         if(!request()->has('lat') || !request()->has('lng')) {
@@ -43,18 +45,42 @@ class LocationController extends Controller
      */
     public function create()
     {
-        //
+        return view('locations.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param LocationRequest|Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LocationRequest $request)
     {
-        //
+        $data = $request->input();
+
+        $extentions = ['jpg','jpeg','png','gif'];
+
+        // Сохранение лого и картинки
+        $logo_file = $request->file('logo_file');
+        $img_file = $request->file('img_file');
+
+        if($logo_file && in_array(strtolower($img_file->extension()),$extentions)) {
+            $logo_file->move(storage_path('app/'));
+            $data['logo'] = $logo_file->getFilename();
+        }
+
+        if($img_file && in_array(strtolower($img_file->extension()),$extentions)) {
+            $img_file->move(storage_path('app/'));
+            $data['img'] = $img_file->getFilename();
+        }
+
+//        dd($data);
+
+        if(!Location::create($data)) {
+            redirect()->back()->with('warning','Ошибка сохранения!')->withInput();
+        }
+
+        return redirect()->route('location.index')->with('message','Сохранено');
     }
 
     /**
@@ -65,7 +91,32 @@ class LocationController extends Controller
      */
     public function show($id)
     {
-        //
+        $location = Location::find($id);
+
+        if(request()->has("photo")) {
+            if(request('photo') == "logo")
+            {
+                $path = public_path("/img/logo.png");
+                if($location->logo && Storage::exists($location->logo))
+                {
+                    $path = storage_path('app/' . $location->logo);
+                }
+            } else { //if(request('photo') == "img")
+
+                $path = public_path("/img/point_1.jpg");
+                if($location->img && Storage::exists($location->img))
+                {
+                    $path = storage_path('app/' . $location->img);
+                }
+            }
+
+            return response()->make(readfile($path, 200)
+                ->header('Content-Type', 'image/png'));
+        }
+
+        abort(404);
+
+        return null;
     }
 
     /**
@@ -76,7 +127,7 @@ class LocationController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('locations.edit',['location' => Location::find($id)]);
     }
 
     /**
@@ -88,7 +139,31 @@ class LocationController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->input();
+
+        $extentions = ['jpg','jpeg','png','gif'];
+
+        // Сохранение лого и картинки
+        $logo_file = $request->file('logo_file');
+        $img_file = $request->file('img_file');
+
+        if($logo_file && in_array(strtolower($img_file->extension()),$extentions)) {
+            $logo_file->move(storage_path('app/'));
+            $data['logo'] = $logo_file->getFilename();
+        }
+
+        if($img_file && in_array(strtolower($img_file->extension()),$extentions)) {
+            $img_file->move(storage_path('app/'));
+            $data['img'] = $img_file->getFilename();
+        }
+
+//        dd($data);
+
+        if(!Location::find($id)->update($data)) {
+            redirect()->back()->with('warning','Ошибка сохранения!')->withInput();
+        }
+
+        return redirect()->route('location.index')->with('message','Сохранено');
     }
 
     /**

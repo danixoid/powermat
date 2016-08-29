@@ -7,6 +7,13 @@
     left: 80px;
     top: 390px;
 
+
+    /* Small devices (tablets, 768px and up) */
+    @media (max-width: $screen-sm-max) {
+      top: 164px;
+    }
+
+
     animation: animationSlides ease-out 0.8s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
@@ -53,7 +60,7 @@ header {
     @media (max-width: $screen-sm-max) {
 
       > h2 {
-        bottom: -90px;
+        bottom: -104px;
       }
     }
   }
