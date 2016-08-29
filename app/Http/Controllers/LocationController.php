@@ -174,6 +174,22 @@ class LocationController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+        if(!Location::destroy($id)) {
+
+            if(request()->ajax()) {
+                return response()->json(['success' => false, 'message' => 'Не удалось удалить']);
+
+            }
+
+            return redirect()->back()->with('warning','Ошибка удаления!');
+        }
+
+        if(request()->ajax()) {
+            return response()->json(['success' => true, 'message' => 'Удалено!']);
+
+        }
+
+        return redirect()->route('location.index')->with('message','Удалено');
     }
 }

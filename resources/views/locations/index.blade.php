@@ -57,6 +57,8 @@
 
             @if(\Auth::check())
                 <p><a href="/" class="edit">Редактировать точку</a></p>
+
+                <p><a href="javascript:deletePoint();" point_id="" class="delete">Удалить точку</a></p>
             @endif
 
         </div>
@@ -114,6 +116,7 @@
                             $(".balloon > p#spots > strong").text(point.spots);
                             $(".balloon > p#distance > strong").text(point.distance);
                             $(".balloon > p > a.edit").attr('href','{!! url('/location') !!}/' + point.id + '/edit');
+                            $(".balloon > p > a.delete").attr('point_id', point.id );
                             $(".balloon").removeClass("hide");
                         });
 
@@ -130,5 +133,23 @@
 
 
         });
+
+        var deletePoint = function () {
+
+            var id = $('[point_id]').attr('point_id');
+            if(!confirm('Вы действительно хотите удалить точку номер ' + id + '?')) {
+                return;
+            }
+
+            $.ajax({
+                'url': '{!! url('location') !!}/' + id,
+                'method': 'delete',
+                'dataType': 'JSON',
+                'success': function (response) {
+                    alert(response.message);
+                    location.href = '{!! url('/location') !!}';
+                }
+            });
+        }
     </script>
 @endsection
