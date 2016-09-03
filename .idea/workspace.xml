@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44a6d314-d0a7-4d34-bd1f-bccc43afdadf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/connecting_new.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css.map" afterPath="$PROJECT_DIR$/public/css/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/_home.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/_home.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/_products.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/_products.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/products.blade.php" afterPath="$PROJECT_DIR$/resources/views/products.blade.php" />
     </list>
     <ignored path="powermat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +35,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="82" column="75" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="75" />
+            <state relative-caret-position="110">
+              <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+              <folding>
+                <element signature="e#642#668#0#HTML" expanded="true" />
+                <element signature="e#711#783#0#HTML" expanded="true" />
+                <element signature="e#805#954#0#HTML" expanded="true" />
+                <element signature="e#985#1081#0#HTML" expanded="true" />
+                <element signature="e#1302#1398#0#HTML" expanded="true" />
+                <element signature="e#1602#1698#0#HTML" expanded="true" />
+                <element signature="e#1886#1982#0#HTML" expanded="true" />
+                <element signature="e#2178#2274#0#HTML" expanded="true" />
+                <element signature="e#2444#2540#0#HTML" expanded="true" />
+                <element signature="e#2716#2812#0#HTML" expanded="true" />
+                <element signature="e#3022#3118#0#HTML" expanded="true" />
+                <element signature="e#3330#3426#0#HTML" expanded="true" />
+                <element signature="e#3621#3717#0#HTML" expanded="true" />
+                <element signature="e#3896#3992#0#HTML" expanded="true" />
+                <element signature="e#4179#4275#0#HTML" expanded="true" />
+                <element signature="e#4436#4532#0#HTML" expanded="true" />
+                <element signature="e#4699#4795#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_products.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/sass/_products.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -103,11 +127,11 @@
         <option value="$PROJECT_DIR$/resources/views/locations/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LocationController.php" />
         <option value="$PROJECT_DIR$/resources/views/products.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/_products.scss" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/_home.scss" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/_products.scss" />
       </list>
     </option>
   </component>
@@ -892,7 +916,7 @@
       <workItem from="1472446959111" duration="9294000" />
       <workItem from="1472463708359" duration="1531000" />
       <workItem from="1472704887828" duration="15000" />
-      <workItem from="1472881310198" duration="5593000" />
+      <workItem from="1472881310198" duration="9143000" />
     </task>
     <task id="LOCAL-00001" summary="Повторная отправка. Первый коммит.">
       <created>1471015383571</created>
@@ -999,11 +1023,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472461518117</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="some fixes">
+      <created>1472886940723</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1472886940723</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148931000" />
+    <option name="totallyTimeSpent" value="152481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="740" extended-state="0" />
@@ -1055,7 +1086,8 @@
     <MESSAGE value="updateOrCreate to find($id)-&gt;update($data)" />
     <MESSAGE value="Location controller store update and views&#10;marker css for small devices" />
     <MESSAGE value="Location controller delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Location controller delete" />
+    <MESSAGE value="some fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1255,14 +1287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1394,14 +1418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/_products.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/products.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -1418,10 +1434,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="82" column="75" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="75" />
+        <state relative-caret-position="110">
+          <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+          <folding>
+            <element signature="e#642#668#0#HTML" expanded="true" />
+            <element signature="e#711#783#0#HTML" expanded="true" />
+            <element signature="e#805#954#0#HTML" expanded="true" />
+            <element signature="e#985#1081#0#HTML" expanded="true" />
+            <element signature="e#1302#1398#0#HTML" expanded="true" />
+            <element signature="e#1602#1698#0#HTML" expanded="true" />
+            <element signature="e#1886#1982#0#HTML" expanded="true" />
+            <element signature="e#2178#2274#0#HTML" expanded="true" />
+            <element signature="e#2444#2540#0#HTML" expanded="true" />
+            <element signature="e#2716#2812#0#HTML" expanded="true" />
+            <element signature="e#3022#3118#0#HTML" expanded="true" />
+            <element signature="e#3330#3426#0#HTML" expanded="true" />
+            <element signature="e#3621#3717#0#HTML" expanded="true" />
+            <element signature="e#3896#3992#0#HTML" expanded="true" />
+            <element signature="e#4179#4275#0#HTML" expanded="true" />
+            <element signature="e#4436#4532#0#HTML" expanded="true" />
+            <element signature="e#4699#4795#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/_products.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
           <folding />
         </state>
       </provider>

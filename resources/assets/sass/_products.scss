@@ -61,13 +61,13 @@ header {
       &.span-top {
         top: 17.7%;
         right: 0;
-        width: 23.2%;
+        width: 25%;
       }
 
       &.span-bottom {
-        bottom: 22%;
+        top: 55%;
         left: 4%;
-        width: 24.5%;
+        width: 30%;
       }
 
       /* Small devices (tablets, 768px and up) */
@@ -92,20 +92,23 @@ header {
   > .content {
     width: 80%;
     margin: 40px auto;
-    font-size: 12pt;
+    font-size: 10pt;
+    //line-height: 16pt;
 
     > img {
       float: left;
       width: 50%;
-      margin-bottom: 30px;
+      margin-bottom: 60px;
     }
   }
 
   /* Small devices (tablets, 768px and up) */
   @media (max-width: $screen-sm-max) {
     > .content {
-      width: 100%;
-      font-size: 8pt;
+      //font-size: 8pt;
+      > img {
+        margin-bottom: 100px;
+      }
     }
   }
 

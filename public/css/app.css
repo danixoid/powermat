@@ -5977,11 +5977,11 @@ header#products > img {
       .connecting > .content > span.span-top {
         top: 17.7%;
         right: 0;
-        width: 23.2%; }
+        width: 25%; }
       .connecting > .content > span.span-bottom {
-        bottom: 22%;
+        top: 55%;
         left: 4%;
-        width: 24.5%; }
+        width: 30%; }
       @media (max-width: 991px) {
         .connecting > .content > span {
           font-size: 10pt;
@@ -5998,15 +5998,14 @@ header#products > img {
   .charging > .content {
     width: 80%;
     margin: 40px auto;
-    font-size: 12pt; }
+    font-size: 10pt; }
     .charging > .content > img {
       float: left;
       width: 50%;
-      margin-bottom: 30px; }
+      margin-bottom: 60px; }
   @media (max-width: 991px) {
-    .charging > .content {
-      width: 100%;
-      font-size: 8pt; } }
+    .charging > .content > img {
+      margin-bottom: 100px; } }
   @media (min-width: 1600px) {
     .charging > .content {
       font-size: 14pt; } }
