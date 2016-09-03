@@ -5891,6 +5891,7 @@ header#main {
     .mobile > .content > h3 {
       position: absolute;
       top: 30%;
+      margin: 0;
       right: 0;
       font-size: 1.7vw; }
     .mobile > .content > .download {
@@ -5902,6 +5903,9 @@ header#main {
         margin: 1vw;
         width: 13vw;
         float: left; }
+
+.modal .modal-dialog {
+  width: 95%; }
 
 header#business::before {
   background: url("../img/header2.jpg") left top no-repeat;
@@ -5960,8 +5964,28 @@ header#products > img {
 .connecting {
   background: linear-gradient(to top, #e3e3e3, #ffffff); }
   .connecting > .content {
+    position: relative;
     width: 80%;
     margin: 0 auto; }
+    .connecting > .content > span {
+      position: absolute;
+      color: #009648;
+      color: rgba(0, 152, 70, 0.9);
+      font-size: 18pt;
+      line-height: 20pt;
+      /* Small devices (tablets, 768px and up) */ }
+      .connecting > .content > span.span-top {
+        top: 17.7%;
+        right: 0;
+        width: 23.2%; }
+      .connecting > .content > span.span-bottom {
+        bottom: 22%;
+        left: 4%;
+        width: 24.5%; }
+      @media (max-width: 991px) {
+        .connecting > .content > span {
+          font-size: 10pt;
+          line-height: 10pt; } }
     .connecting > .content > img {
       width: 100%;
       margin: 30px 0; }
@@ -5969,15 +5993,20 @@ header#products > img {
 .charging {
   border-bottom: 60px solid #009746;
   background: linear-gradient(to top, #dce6db, #ffffff);
+  /* Small devices (tablets, 768px and up) */
   /* Large devices (large desktops, 1200px and up) */ }
   .charging > .content {
     width: 80%;
     margin: 40px auto;
-    font-size: 1.2vw; }
+    font-size: 12pt; }
     .charging > .content > img {
       float: left;
       width: 50%;
       margin-bottom: 30px; }
+  @media (max-width: 991px) {
+    .charging > .content {
+      width: 100%;
+      font-size: 8pt; } }
   @media (min-width: 1600px) {
     .charging > .content {
       font-size: 14pt; } }
@@ -6241,6 +6270,9 @@ header {
       header > h2 {
         bottom: -90px;
         font-size: 16pt; } }
+
+.modal-backdrop {
+  z-index: -1; }
 
 /**
   НАВИГАЦИЯ

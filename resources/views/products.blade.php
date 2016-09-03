@@ -23,7 +23,9 @@
 
     <div class="connecting">
         <div class="content">
-            <img src="{!! url('/img/connecting.png') !!}" />
+            <span class="span-top">{!! option('product_connect_top') !!}</span>
+            <span class="span-bottom">{!! option('product_connect_bottom') !!}</span>
+            <img src="{!! url('/img/connecting_new.png') !!}" />
         </div>
     </div>
 

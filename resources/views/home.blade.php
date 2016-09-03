@@ -37,7 +37,9 @@
 
             <div class="watch">
                 <p>{!! option('home_watch') !!}</p>
-                <button class="btn btn-watch"><i class="fa fa-play"></i></button>
+                <button type="button"  data-toggle="modal" data-target="#myModal"
+                        class="btn btn-watch" data-theVideo="https://www.youtube.com/embed/MF1FIY9ypro"><i class="fa fa-play"></i></button>
+
             </div>
         </div>
     </div>
@@ -52,7 +54,37 @@
         </div>
     </div>
 
+
 @endsection
 
 @section('javascript')
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script type="text/javascript">
+
+        $(function() {
+            var trigger = $("body").find('[data-toggle="modal"]');
+            trigger.click(function() {
+                var theModal = $(this).data( "target" ),
+                        videoSRC = $(this).attr( "data-theVideo" ),
+                        videoSRCauto = videoSRC+"?autoplay=1" ;
+                $(theModal+' iframe').attr('src', videoSRCauto);
+                $(theModal+' iframe').attr('height', $(window).height()-100);
+                $(theModal).on('hidden.bs.modal', function () {
+                    $(theModal+' iframe').attr('src', videoSRC);
+                })
+            });
+        });
+    </script>
 @endsection

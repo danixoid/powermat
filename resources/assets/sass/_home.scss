@@ -230,6 +230,7 @@ header {
     > h3 {
       position: absolute;
       top: 30%;
+      margin: 0;
       right: 0;
       font-size: 1.7vw;
     }
@@ -247,5 +248,11 @@ header {
         float: left;
       }
     }
+  }
+}
+
+.modal {
+  .modal-dialog {
+    width: 95%;
   }
 }

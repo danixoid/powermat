@@ -47,8 +47,35 @@ header {
   background: linear-gradient(to top, #e3e3e3, #ffffff);
 
   > .content {
+    position: relative;
     width: 80%;
     margin: 0 auto;
+
+    > span {
+      position: absolute;
+      color: #009648;
+      color: rgba(0,152,70,.9);
+      font-size: 18pt;
+      line-height: 20pt;
+
+      &.span-top {
+        top: 17.7%;
+        right: 0;
+        width: 23.2%;
+      }
+
+      &.span-bottom {
+        bottom: 22%;
+        left: 4%;
+        width: 24.5%;
+      }
+
+      /* Small devices (tablets, 768px and up) */
+      @media (max-width: $screen-sm-max) {
+        font-size: 10pt;
+        line-height: 10pt;
+      }
+    }
 
     > img {
       width: 100%;
@@ -65,12 +92,20 @@ header {
   > .content {
     width: 80%;
     margin: 40px auto;
-    font-size: 1.2vw;
+    font-size: 12pt;
 
     > img {
       float: left;
       width: 50%;
       margin-bottom: 30px;
+    }
+  }
+
+  /* Small devices (tablets, 768px and up) */
+  @media (max-width: $screen-sm-max) {
+    > .content {
+      width: 100%;
+      font-size: 8pt;
     }
   }
 
