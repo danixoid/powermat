@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="44a6d314-d0a7-4d34-bd1f-bccc43afdadf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css.map" afterPath="$PROJECT_DIR$/public/css/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/_products.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/_products.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/options/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/options/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/options/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/options/edit.blade.php" />
     </list>
     <ignored path="powermat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,16 +57,63 @@
                 <element signature="e#4179#4275#0#HTML" expanded="true" />
                 <element signature="e#4436#4532#0#HTML" expanded="true" />
                 <element signature="e#4699#4795#0#HTML" expanded="true" />
+                <marker date="1472888222972" expanded="true" signature="572:5110" ph="..." />
+                <marker date="1472888222972" expanded="true" signature="5135:5559" ph="..." />
+                <marker date="1472888222972" expanded="true" signature="5165:5548" ph="..." />
+                <marker date="1472888222972" expanded="true" signature="5239:5533" ph="..." />
+                <marker date="1472888222972" expanded="true" signature="6066:6416" ph="..." />
+                <marker date="1472888222972" expanded="true" signature="6117:6382" ph="..." />
+                <marker date="1472888222972" expanded="true" signature="6157:6343" ph="..." />
+                <marker date="1472888222972" expanded="true" signature="6198:6324" ph="..." />
+                <marker date="1472888222972" expanded="true" signature="6508:7163" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_products.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_products.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/_products.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="106">
               <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="856">
+              <caret line="146" column="69" selection-start-line="146" selection-start-column="69" selection-end-line="146" selection-end-column="69" />
+              <folding>
+                <marker date="1472892900997" expanded="true" signature="3360:3367" ph="«" />
+                <marker date="1472892900997" expanded="true" signature="3380:3387" ph="»" />
+                <marker date="1472892900997" expanded="true" signature="4567:4574" ph="«" />
+                <marker date="1472892900997" expanded="true" signature="4587:4594" ph="»" />
+                <marker date="1472892900997" expanded="true" signature="6615:6632" ph="..." />
+                <marker date="1472892900997" expanded="true" signature="6884:6901" ph="..." />
+                <marker date="1472892900997" expanded="true" signature="7154:7171" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/options/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/options/edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="63" column="69" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -108,13 +154,10 @@
         <option value="$PROJECT_DIR$/resources/views/options.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/OptionRequest.php" />
         <option value="$PROJECT_DIR$/public/vendor/unisharp/laravel-ckeditor/config.js" />
-        <option value="$PROJECT_DIR$/resources/views/options/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/business.blade.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/options/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Location.php" />
         <option value="$PROJECT_DIR$/resources/views/map.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/options/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Option.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OptionController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
@@ -132,6 +175,9 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/_home.scss" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/_products.scss" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/options/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/options/create.blade.php" />
       </list>
     </option>
   </component>
@@ -248,6 +294,28 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="options" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="powermat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="powermat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -268,6 +336,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="powermat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="powermat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="powermat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="powermat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -916,7 +1016,7 @@
       <workItem from="1472446959111" duration="9294000" />
       <workItem from="1472463708359" duration="1531000" />
       <workItem from="1472704887828" duration="15000" />
-      <workItem from="1472881310198" duration="9143000" />
+      <workItem from="1472881310198" duration="9947000" />
     </task>
     <task id="LOCAL-00001" summary="Повторная отправка. Первый коммит.">
       <created>1471015383571</created>
@@ -1030,11 +1130,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472886940723</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="some fixes">
+      <created>1472892426109</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1472892426109</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152481000" />
+    <option name="totallyTimeSpent" value="153285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="740" extended-state="0" />
@@ -1195,24 +1302,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/options/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/business.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2538">
-          <caret line="146" column="47" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1253,13 +1346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/options/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="48" column="107" selection-start-line="48" selection-start-column="100" selection-end-line="48" selection-end-column="107" />
         </state>
       </provider>
     </entry>
@@ -1464,6 +1550,15 @@
             <element signature="e#4179#4275#0#HTML" expanded="true" />
             <element signature="e#4436#4532#0#HTML" expanded="true" />
             <element signature="e#4699#4795#0#HTML" expanded="true" />
+            <marker date="1472888222972" expanded="true" signature="572:5110" ph="..." />
+            <marker date="1472888222972" expanded="true" signature="5135:5559" ph="..." />
+            <marker date="1472888222972" expanded="true" signature="5165:5548" ph="..." />
+            <marker date="1472888222972" expanded="true" signature="5239:5533" ph="..." />
+            <marker date="1472888222972" expanded="true" signature="6066:6416" ph="..." />
+            <marker date="1472888222972" expanded="true" signature="6117:6382" ph="..." />
+            <marker date="1472888222972" expanded="true" signature="6157:6343" ph="..." />
+            <marker date="1472888222972" expanded="true" signature="6198:6324" ph="..." />
+            <marker date="1472888222972" expanded="true" signature="6508:7163" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1472,6 +1567,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="856">
+          <caret line="146" column="69" selection-start-line="146" selection-start-column="69" selection-end-line="146" selection-end-column="69" />
+          <folding>
+            <marker date="1472892900997" expanded="true" signature="3360:3367" ph="«" />
+            <marker date="1472892900997" expanded="true" signature="3380:3387" ph="»" />
+            <marker date="1472892900997" expanded="true" signature="4567:4574" ph="«" />
+            <marker date="1472892900997" expanded="true" signature="4587:4594" ph="»" />
+            <marker date="1472892900997" expanded="true" signature="6615:6632" ph="..." />
+            <marker date="1472892900997" expanded="true" signature="6884:6901" ph="..." />
+            <marker date="1472892900997" expanded="true" signature="7154:7171" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/options/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="63" column="69" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/options/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
           <folding />
         </state>
       </provider>

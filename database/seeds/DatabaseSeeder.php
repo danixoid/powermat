@@ -76,7 +76,7 @@ class AllTablesSeeder extends Seeder
 
         //footer
         Option::create(['key' => 'address','val' => 'Адрес: Республика Казахстан, г.Алматы']);
-        Option::create(['key' => 'phone','val' => 'Телефон: +7 775 969 3 999 / +7 776 469 3 999']);
+        Option::create(['key' => 'phone','val' => 'Телефон: +<nobr>7 775</nobr> <nobr>969 3</nobr> 999 / +<nobr>7 776</nobr> <nobr>469 3</nobr> 999']);
         Option::create(['key' => 'email','val' => 'email: mobile_energy@ramlbler.ru']);
         Option::create(['key' => 'vk','val' => 'https://new.vk.com/mobileenergy']);
         Option::create(['key' => 'facebook','val' => 'https://www.facebook.com/Mobilenergy']);
@@ -112,7 +112,7 @@ class AllTablesSeeder extends Seeder
         Option::create(['key' => 'business_subtitle','val' => 'Получай <strong>прибыль!</strong>']);
         Option::create(['key' => 'business_body','val' =>
             'Вы получаете установленный 1 комплект <br />' .
-            'беспроводной зарядной системы под ключ по цене <b>28 000</b><br />' .
+            'беспроводной зарядной системы под ключ по цене <b><nobr>28 000</nobr></b><br />' .
             '1 комплект состоит:' .
             '<ul>' .
             '   <li>Зарядная станция</li>' .
@@ -124,17 +124,17 @@ class AllTablesSeeder extends Seeder
             '<br />' .
             'Как правило, в одно заведение устанавливается МИНИМУМ 3-4 комплекта. <br />' .
             'Рекомендованная стоимость услуги составляет 500 тенге.<br />' .
-            'Соответственно, 500 тг. х 30 дней = <b>15 000</b> тенге <br />' .
+            'Соответственно, 500 тг. х 30 дней = <b><nobr>15 000</nobr></b> тенге <br />' .
             'МИНИМАЛЬНО в месяц (с 1 комплекта) <br />' .
-            'либо 500 тг. х 4 шт. х 30 дней = <b>60 000</b> тенге <br />' .
+            'либо 500 тг. х 4 шт. х 30 дней = <b><nobr>60 000</nobr></b> тенге <br />' .
             'МИНИМАЛЬНО в месяц (с 4 комплектов) <br />' .
             '<br />' .
             '<br />' .
             'Срок окупаемости 4 комплектов составляет<br />' .
-            '1.8 месяца = 112 000 тенге / 60 000 тенге.<br />' .
+            '1.8 месяца = <nobr>112 000</nobr> тенге / <nobr>60 000</nobr> тенге.<br />' .
             'По истечении 1,7 месяца вы зарабатываете<br />' .
-            'ЕЖЕМЕСЯЧНО МИНИМУМ по <b>60 000</b> тенге с 4 комплектов<br />' .
-            'или с 10 комплектов  - 150 000 тенге в месяц чистого дохода.<br />' .
+            'ЕЖЕМЕСЯЧНО МИНИМУМ по <b><nobr>60 000</nobr></b> тенге с 4 комплектов<br />' .
+            'или с 10 комплектов  - <nobr>150 000</nobr> тенге в месяц чистого дохода.<br />' .
             '<br />' .
             '<br />' .
             'Соответственно, ВАШ ДОХОД за 1 месяц<br />' .
@@ -145,15 +145,15 @@ class AllTablesSeeder extends Seeder
                 '<div class="row">' .
                     '<div class="col-xs-4 text-center">' .
                         '<img width="90%" src="/img/box_x4.png" />' .
-                        '<div style="margin-top: 10px;"><strong>60 000</strong> тенге</div>' .
+                        '<div style="margin-top: 10px;"><strong><nobr>60 000</nobr></strong> тенге</div>' .
                     '</div>' .
                     '<div class="col-xs-4 text-center">' .
                         '<img width="90%" src="/img/box_x10.png" />' .
-                        '<div style="margin-top: 10px;"><strong>150 000</strong> тенге</div>' .
+                        '<div style="margin-top: 10px;"><strong><nobr>150 000</nobr></strong> тенге</div>' .
                     '</div>' .
                     '<div class="col-xs-4 text-center">' .
                         '<img width="90%" src="/img/box_x20.png" />' .
-                        '<div style="margin-top: 10px;"><strong>300 000</strong> тенге</div>' .
+                        '<div style="margin-top: 10px;"><strong><nobr>300 000</nobr></strong> тенге</div>' .
                     '</div>' .
                 '</div>' .
             '</div>']);

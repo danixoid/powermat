@@ -61,7 +61,7 @@
                     <div class="form-group">
                         <label class="col-md-3 control-label">Значение</label>
                         <div class="col-md-6">
-                            <textarea class="form-control" name="val">{!! $option->val !!}</textarea>
+                            <textarea class="form-control" rows="10" name="val">{!! $option->val !!}</textarea>
                         </div>
                     </div>
                     <div class="form-group">
@@ -80,7 +80,7 @@
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
     <script>
-        $('textarea').ckeditor('sourcedialog');
+//        $('textarea').ckeditor('sourcedialog');
         // $('.textarea').ckeditor(); // if class is prefered.
     </script>
 @endsection
