@@ -31,7 +31,8 @@
 
     <div class="charging">
         <div class="content">
-            <img src="{!! url('/img/charging.png') !!}" />
+            <img class="hidden-xs" src="{!! url('/img/charging.png') !!}" />
+            <img class="visible-xs" src="{!! url('/img/charging_new.png') !!}" />
             {!! option('products_body') !!}
         </div>
         <div style="clear: both;"></div>

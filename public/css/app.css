@@ -5821,16 +5821,18 @@ header#main {
         width: 40%;
         text-align: center; } }
 
-.invite {
+.invite > .content {
   max-width: 600px;
   margin: 20px auto; }
-  .invite > .btn {
+  .invite > .content > .btn {
     background-color: #ebedec;
     border-radius: 5px;
     padding: 25px;
     color: black;
     color: rgba(0, 0, 0, 0.8);
     text-transform: uppercase; }
+  .invite > .content .bxslider img {
+    width: 80px; }
 
 .about {
   position: relative;
@@ -5998,14 +6000,16 @@ header#products > img {
   .charging > .content {
     width: 80%;
     margin: 40px auto;
-    font-size: 10pt; }
+    font-size: 12pt; }
     .charging > .content > img {
       float: left;
       width: 50%;
       margin-bottom: 60px; }
   @media (max-width: 991px) {
-    .charging > .content > img {
-      margin-bottom: 100px; } }
+    .charging > .content {
+      font-size: 10pt; }
+      .charging > .content > img {
+        margin-bottom: 100px; } }
   @media (min-width: 1600px) {
     .charging > .content {
       font-size: 14pt; } }

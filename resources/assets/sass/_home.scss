@@ -133,16 +133,26 @@ header {
 }
 
 .invite {
-  max-width: 600px;
-  margin: 20px auto;
 
-  > .btn {
-    background-color: #ebedec;
-    border-radius: 5px;
-    padding: 25px;
-    color: black;
-    color: rgba(0,0,0,.8);
-    text-transform: uppercase;
+  > .content {
+
+    max-width: 600px;
+    margin: 20px auto;
+
+    > .btn {
+      background-color: #ebedec;
+      border-radius: 5px;
+      padding: 25px;
+      color: black;
+      color: rgba(0,0,0,.8);
+      text-transform: uppercase;
+    }
+
+    .bxslider{
+      img {
+        width: 80px;
+      }
+    }
   }
 
 }
@@ -250,6 +260,7 @@ header {
     }
   }
 }
+
 
 .modal {
   .modal-dialog {
