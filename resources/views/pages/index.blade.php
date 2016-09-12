@@ -39,6 +39,7 @@
                     <div class="well">{!! $page->body !!}</div>
                     @if(\Auth::check())
                         <a href="{!! route('news.edit',$page->id) !!}">Редактировать</a>
+                        <p><a href="javascript:deletePage({!! $page->id !!});" class="delete">Удалить</a></p>
                     @endif
                 </div>
             </div>
@@ -80,6 +81,22 @@
             });
         });
 
+        var deletePage = function (id) {
+
+            if(!confirm('Вы действительно хотите удалить запись номер ' + id + '?')) {
+                return;
+            }
+
+            $.ajax({
+                'url': '{!! url('news') !!}/' + id,
+                'method': 'delete',
+                'dataType': 'JSON',
+                'success': function (response) {
+                    alert(response.message);
+                    location.href = '{!! url('/news') !!}';
+                }
+            });
+        }
 
     </script>
 @endsection
