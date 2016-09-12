@@ -35,8 +35,8 @@
       <file leaf-file-name="LocationController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LocationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="158" column="8" selection-start-line="158" selection-start-column="8" selection-end-line="158" selection-end-column="8" />
+            <state relative-caret-position="404">
+              <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -983,7 +983,7 @@
       <workItem from="1472704887828" duration="15000" />
       <workItem from="1472881310198" duration="13657000" />
       <workItem from="1472902580980" duration="306000" />
-      <workItem from="1473691745599" duration="1636000" />
+      <workItem from="1473691745599" duration="1698000" />
     </task>
     <task id="LOCAL-00001" summary="Повторная отправка. Первый коммит.">
       <created>1471015383571</created>
@@ -1132,11 +1132,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473693297706</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="some fixes">
+      <created>1473693385012</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1473693385012</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158937000" />
+    <option name="totallyTimeSpent" value="158999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="740" extended-state="0" />
@@ -1558,8 +1565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LocationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="158" column="8" selection-start-line="158" selection-start-column="8" selection-end-line="158" selection-end-column="8" />
+        <state relative-caret-position="404">
+          <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
           <folding />
         </state>
       </provider>
