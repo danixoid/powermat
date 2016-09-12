@@ -12,7 +12,13 @@
 
 @section('meta')
 
+    <style>
+        #exampleModal .modal-body img {
+            width: 100%;
+        }
+    </style>
 @endsection
+
 
 @section('content')
 
@@ -47,7 +53,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
 
-                <div class="modal-body balloon right">
+                <div class="modal-body">
                     <img />
                 </div>
             </div>
