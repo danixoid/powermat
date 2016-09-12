@@ -4,7 +4,6 @@
     <list default="true" id="44a6d314-d0a7-4d34-bd1f-bccc43afdadf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/show.blade.php" />
     </list>
     <ignored path="powermat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,12 +52,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="252">
+              <caret line="61" column="22" selection-start-line="58" selection-start-column="39" selection-end-line="61" selection-end-column="22" />
+              <folding>
+                <element signature="e#1750#1757#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="53" column="22" selection-start-line="50" selection-start-column="39" selection-end-line="53" selection-end-column="22" />
               <folding>
                 <element signature="e#1318#1325#0#HTML" expanded="true" />
               </folding>
@@ -142,8 +143,8 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/_home.scss" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/_news.scss" />
-        <option value="$PROJECT_DIR$/resources/views/pages/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/index.blade.php" />
       </list>
     </option>
   </component>
@@ -1039,7 +1040,7 @@
       <workItem from="1472704887828" duration="15000" />
       <workItem from="1472881310198" duration="13657000" />
       <workItem from="1472902580980" duration="306000" />
-      <workItem from="1473691745599" duration="5408000" />
+      <workItem from="1473691745599" duration="5432000" />
     </task>
     <task id="LOCAL-00001" summary="Повторная отправка. Первый коммит.">
       <created>1471015383571</created>
@@ -1230,11 +1231,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473698125127</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="some fixes">
+      <created>1473698675337</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1473698675337</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162709000" />
+    <option name="totallyTimeSpent" value="162733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="745" extended-state="6" />
@@ -1655,20 +1663,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="53" column="22" selection-start-line="50" selection-start-column="39" selection-end-line="53" selection-end-column="22" />
+          <folding>
+            <element signature="e#1318#1325#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        <state relative-caret-position="252">
+          <caret line="61" column="22" selection-start-line="58" selection-start-column="39" selection-end-line="61" selection-end-column="22" />
           <folding>
-            <element signature="e#1318#1325#0#HTML" expanded="true" />
+            <element signature="e#1750#1757#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
