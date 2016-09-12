@@ -35,7 +35,7 @@
         <div class="content">
             <h3>{!! $page->title !!}</h3>
             <p>{!! $page->subtitle !!}</p>
-            <div class="well">{!! $page->body !!}</div>
+            <div class="wells">{!! $page->body !!}</div>
             @if(\Auth::check())
                 <a href="{!! route('news.edit',$page->id) !!}">Редактировать</a>
             @endif
@@ -64,7 +64,7 @@
 
         $(function(){
 
-            $('.well img').click(function(e) {
+            $('.wells img').click(function(e) {
 
                 var src = $(this).attr('src');
 

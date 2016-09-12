@@ -36,7 +36,7 @@
                 <div class="content">
                     <h3>{!! $page->title !!}</h3>
                     <p>{!! $page->subtitle !!}</p>
-                    <div class="well">{!! $page->body !!}</div>
+                    <div class="wells">{!! $page->body !!}</div>
                     @if(\Auth::check())
                         <a href="{!! route('news.edit',$page->id) !!}">Редактировать</a>
                         <p><a href="javascript:deletePage({!! $page->id !!});" class="delete">Удалить</a></p>
@@ -72,7 +72,7 @@
 
         $(function(){
 
-            $('.well img').click(function(e) {
+            $('.wells img').click(function(e) {
 
                 var src = $(this).attr('src');
 
