@@ -147,15 +147,13 @@ class LocationController extends Controller
         $logo_file = $request->file('logo_file');
         $img_file = $request->file('img_file');
 
-        if($logo_file //&& in_array(strtolower(pathinfo($img_file->getPathName(),PATHINFO_EXTENSION),$extentions))
+        if($logo_file && in_array(strtolower($img_file->getClientOriginalExtension()),$extentions)
         ) {
             $logo_file->move(storage_path('app/'));
             $data['logo'] = $logo_file->getFilename();
         }
 
-        if($img_file
-            //&& in_array(strtolower($img_file->extension()),$extentions)
-        ) {
+        if($img_file && in_array(strtolower($img_file->getClientOriginalExtension()),$extentions)) {
             $img_file->move(storage_path('app/'));
             $data['img'] = $img_file->getFilename();
         }

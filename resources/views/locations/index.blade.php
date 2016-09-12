@@ -50,10 +50,10 @@
             <a href="javascript:$('.balloon').addClass('hide')"><i class="fa fa-remove fa-2x"></i></a>
             <img src="{!! url('/location') !!}" />
             <p id="name"><strong></strong></p>
-            <p id="about">about</p>
             <p id="address">about</p>
-            <p id="spots">Количество зарядных устройств: <strong></strong></p>
-            <p id="distance">Дистанция: <strong></strong></p>
+            <p id="about">about</p>
+            <p id="spots">Зарядки: <strong></strong> шт.</p>
+            {{--<p id="distance">Дистанция: <strong></strong></p>--}}
 
             @if(\Auth::check())
                 <p><a href="/" class="edit">Редактировать точку</a></p>
@@ -80,14 +80,14 @@
                         searchControlProvider: 'yandex#search'
                     });
 
-            myMap.geoObjects.add(new ymaps.Placemark([43.228999, 76.906483], {
+            /*myMap.geoObjects.add(new ymaps.Placemark([43.228999, 76.906483], {
                 hintContent: 'Моё местоположение'
             }, {
                 iconLayout: 'default#image',
                 iconImageHref: '{!! url('/img/marker.png') !!}',
                 iconImageSize: [32, 42],
                 iconImageOffset: [-3, -42],
-            }));
+            }));*/
 
             $.ajax({
                 'url' : '{!! route('location.index') !!}',
@@ -98,7 +98,7 @@
                     points.forEach(function(point,i,arr) {
 
                         var marker = new ymaps.Placemark([point.lat, point.lng], {
-                            balloonContent: '<img width="50px" src="{!! url('/location') !!}/' + point.id + '?photo=logo" />',
+                            //balloonContent: '<img width="50px" src="{!! url('/location') !!}/' + point.id + '?photo=logo" />',
                             hintContent: points[i].name
                         }, {
                             iconLayout: 'default#image',
@@ -114,7 +114,7 @@
                             $(".balloon > p#about").html(point.about);
                             $(".balloon > p#address").html(point.address);
                             $(".balloon > p#spots > strong").text(point.spots);
-                            $(".balloon > p#distance > strong").text(point.distance);
+                            //$(".balloon > p#distance > strong").text(point.distance);
                             $(".balloon > p > a.edit").attr('href','{!! url('/location') !!}/' + point.id + '/edit');
                             $(".balloon > p > a.delete").attr('point_id', point.id );
                             $(".balloon").removeClass("hide");
