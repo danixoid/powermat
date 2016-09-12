@@ -49,7 +49,7 @@
 
             <div class="watch">
                 <p>{!! option('home_watch') !!}</p>
-                <button type="button"  data-toggle="modal" data-target="#myModal"
+                <button type="button"  data-toggle="modal" data-target="#video"
                         class="btn btn-watch" data-theVideo="https://www.youtube.com/embed/MF1FIY9ypro"><i class="fa fa-play"></i></button>
 
             </div>
@@ -79,7 +79,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="videoLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">

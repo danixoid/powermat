@@ -5906,7 +5906,7 @@ header#main {
         width: 13vw;
         float: left; }
 
-.modal .modal-dialog {
+#video.modal .modal-dialog {
   width: 95%; }
 
 header#business::before {
