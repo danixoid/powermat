@@ -20,6 +20,10 @@ header {
     min-height: 250px;
     margin: 0 auto;
     padding: 20px 15px;
+    /* Small devices (tablets, 768px and up) */
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+    }
   }
 
 }

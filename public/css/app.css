@@ -6027,7 +6027,11 @@ header#news::before {
     width: 80%;
     min-height: 250px;
     margin: 0 auto;
-    padding: 20px 15px; }
+    padding: 20px 15px;
+    /* Small devices (tablets, 768px and up) */ }
+    @media (max-width: 991px) {
+      .news > .content {
+        width: 100%; } }
 
 div.paginate {
   border-bottom: 60px solid #009746; }
