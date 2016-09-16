@@ -7,6 +7,7 @@ use App\Option;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Input;
 
 class OptionController extends Controller
 {
@@ -26,7 +27,10 @@ class OptionController extends Controller
      */
     public function index()
     {
-        $options = Option::paginate(10);
+        $options = Option::where('key','LIKE', '%' . request('query') . '%')
+            ->paginate(10)
+            ->appends(Input::except('page'));
+
         return view('options.index',['options' => $options]);
     }
 

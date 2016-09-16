@@ -63,6 +63,13 @@ class AllTablesSeeder extends Seeder
         }
 
 
+        //meta
+        Option::create(['key' => 'meta_desc','val' => '']);
+        Option::create(['key' => 'meta_keywords','val' => '']);
+        Option::create(['key' => 'yandex-verification','val' => '']);
+        Option::create(['key' => 'google-site-verification','val' => '']);
+
+
         //home
         Option::create(['key' => 'home_title','val' => 'Беспроводные зарядные системы стандарта Qi']);
         Option::create(['key' => 'home_offer1','val' => 'Предоставляем вам возможность стать частью динамичного интересного проекта']);
@@ -73,6 +80,7 @@ class AllTablesSeeder extends Seeder
                 '<p>Просто положи свой телефон на зарядный круг для зарядки.</p>']);
         Option::create(['key' => 'home_watch','val' => 'Смотри на видео<br />как это работает']);
         Option::create(['key' => 'home_mobile','val' => 'Чтобы начать, скачайте приложение <br /> для вашего смартфона']);
+        Option::create(['key' => 'video','val' => 'https://www.youtube.com/embed/MF1FIY9ypro']);
 
         //footer
         Option::create(['key' => 'address','val' => 'Адрес: Республика Казахстан, г.Алматы']);
@@ -84,6 +92,9 @@ class AllTablesSeeder extends Seeder
         Option::create(['key' => 'instagram','val' => 'https://www.instagram.com/mobile.energy/']);
 
         //products
+        Option::create(['key' => 'product_connect_top','val' => 'Подключите приёмник к телефону']);
+        Option::create(['key' => 'product_connect_bottom','val' => 'Поместите приёмник на обозначенное место и вы на зарядке']);
+
         Option::create(['key' => 'products_title','val' => 'как работает <strong>&laquo;Mobile Energy&raquo;</strong>']);
         Option::create(['key' => 'products_body','val' => '<p>'.
             '<br />'.

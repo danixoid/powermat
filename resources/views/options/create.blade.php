@@ -62,6 +62,7 @@
                         <label class="col-md-3 control-label">Значение</label>
                         <div class="col-md-6">
                             <textarea class="form-control" rows="10" name="val">{!! old('val') !!}</textarea>
+                            <a id="ckeditor">Режим редактора</a>
                         </div>
                     </div>
                     <div class="form-group">
@@ -80,7 +81,14 @@
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
     <script>
-        //$('textarea').ckeditor('sourcedialog');
+        $(function(){
+
+            $('#ckeditor').click(function() {
+                $('textarea').ckeditor();
+                $(this).remove();
+            });
+
+        });
         // $('.textarea').ckeditor(); // if class is prefered.
     </script>
 @endsection

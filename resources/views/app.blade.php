@@ -14,6 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="_token" content="{{ csrf_token() }}">
 
+    <meta name="description" content="{!! option('meta_desc') !!}">
+    <meta name="author" content="Saumbayev Daniyar @danixoid">
+    <meta name="keywords" content="{!! option('meta_keywords') !!}">
+
+    <meta name='yandex-verification' content='{!! option('yandex-verification') !!}' />
+    <meta name="google-site-verification" content="{!! option('google-site-verification') !!}" />
+
     <title>&laquo;Mobile Energy&raquo; - @yield('title')</title>
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
