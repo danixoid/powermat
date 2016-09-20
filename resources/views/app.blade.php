@@ -21,7 +21,7 @@
     <meta name='yandex-verification' content='{!! option('yandex-verification') !!}' />
     <meta name="google-site-verification" content="{!! option('google-site-verification') !!}" />
 
-    <title>&laquo;Mobile Energy&raquo; - @yield('title')</title>
+    <title>{!! option('meta_title') !!} - @yield('title')</title>
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">

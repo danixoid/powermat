@@ -64,6 +64,7 @@ class AllTablesSeeder extends Seeder
 
 
         //meta
+        Option::create(['key' => 'meta_title','val' => '«Mobile Energy» - Беспроводные зарядки']);
         Option::create(['key' => 'meta_desc','val' => '']);
         Option::create(['key' => 'meta_keywords','val' => '']);
         Option::create(['key' => 'yandex-verification','val' => '']);
