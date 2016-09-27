@@ -204,9 +204,10 @@ header {
 
   .navbar-toggle {
     border-color: $navbar-default-toggle-border-color;
+    background-color: #FEED00;
     &:hover,
     &:focus {
-      background-color: $navbar-default-toggle-hover-bg;
+      background-color: #f9ff7c;
     }
     .icon-bar {
       background-color: $navbar-default-toggle-icon-bar-bg;
@@ -257,6 +258,7 @@ header {
 
     .nav.navbar-nav {
       padding-right: 0;
+      background-color: #FEED00;
     }
   }
 

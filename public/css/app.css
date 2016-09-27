@@ -6290,9 +6290,10 @@ header {
   /* Large devices (large desktops, 1200px and up) */
   /* Small devices (tablets, 768px and up) */ }
   .navbar-main .navbar-toggle {
-    border-color: #ddd; }
+    border-color: #ddd;
+    background-color: #FEED00; }
     .navbar-main .navbar-toggle:hover, .navbar-main .navbar-toggle:focus {
-      background-color: #ddd; }
+      background-color: #f9ff7c; }
     .navbar-main .navbar-toggle .icon-bar {
       background-color: #888; }
   .navbar-main .nav.navbar-nav {
@@ -6317,7 +6318,8 @@ header {
     .navbar-main {
       top: 5px; }
       .navbar-main .nav.navbar-nav {
-        padding-right: 0; } }
+        padding-right: 0;
+        background-color: #FEED00; } }
 
 @keyframes animationFrames {
   0% {
