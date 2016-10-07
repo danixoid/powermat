@@ -6317,6 +6317,9 @@ header {
   @media (max-width: 991px) {
     .navbar-main {
       top: 5px; }
+      .navbar-main .navbar-nav > li > a,
+      .navbar-main .navbar-main ul > li a {
+        color: #000000; }
       .navbar-main .nav.navbar-nav {
         padding-right: 0;
         background-color: #FEED00; } }

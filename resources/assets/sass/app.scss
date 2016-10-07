@@ -256,6 +256,11 @@ header {
 
     top: 5px;
 
+    .navbar-nav > li > a,
+    .navbar-main ul > li a {
+      color: #000000;
+    }
+
     .nav.navbar-nav {
       padding-right: 0;
       background-color: #FEED00;
