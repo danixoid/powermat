@@ -61,7 +61,7 @@
             <h3>{!! option('home_mobile') !!}</h3>
             <div class="download">
                 <a href="#"><img src="{!! url('/img/appstore.png') !!}" /></a>
-                <a href="#"><img src="{!! url('/img/googleplay.png') !!}" /></a>
+                <a href="https://play.google.com/store/apps/details?id=kz.bapps.mobileenergy"><img src="{!! url('/img/googleplay.png') !!}" /></a>
             </div>
         </div>
     </div>
