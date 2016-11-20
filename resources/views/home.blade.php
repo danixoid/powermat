@@ -50,7 +50,7 @@
             <div class="watch">
                 <p>{!! option('home_watch') !!}</p>
                 <button type="button"  data-toggle="modal" data-target="#video"
-                        class="btn btn-watch" data-theVideo="https://www.youtube.com/embed/MF1FIY9ypro"><i class="fa fa-play"></i></button>
+                        class="btn btn-watch" data-theVideo="{!! option('video') !!}"><i class="fa fa-play"></i></button>
 
             </div>
         </div>
